@@ -447,14 +447,14 @@ body {
   border-bottom: 2px dotted rgba(255, 255, 255, 0.1);
 }
 .services__item-2::before {
-  content: url(../images/icon-2.png);
+  content: url(../images/Icon-2.png);
 }
 .services__item-3 {
   border-bottom: 2px dotted rgba(255, 255, 255, 0.1);
   border-right: 2px dotted rgba(255, 255, 255, 0.1);
 }
 .services__item-3::before {
-  content: url(../images/icon-3.png);
+  content: url(../images/Icon-3.png);
 }
 .services__item-4 {
   border-bottom: 2px dotted rgba(255, 255, 255, 0.1);
