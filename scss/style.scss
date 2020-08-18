@@ -54,7 +54,6 @@ body {
 .icon-facebook {
     width: 19px;
     height: 35px;
-    object-fit: cover;
 }
 .icon-google-plus {
     width: 43px;
@@ -63,6 +62,22 @@ body {
 .icon-vk {
     width: 39px;
     height: 23px;
+}
+.icon-youtube {
+    width: 31px;
+    height: 37px;
+}
+.icon-linkedin {
+    width: 32px;
+    height: 31px;
+}
+.icon-digg {
+    width: 43px;
+    height: 26px;
+}
+.icon-deviantart {
+    width: 21px;
+    height: 35px;
 }
 
 .header {
@@ -819,9 +834,6 @@ body {
         }
     }
 
-    &__best-btn {
-    }
-
     &__info {
         max-width: 500px;
         width: 100%;
@@ -843,5 +855,122 @@ body {
         color: #040404;
         font-size: 18px;
         line-height: 30px;
+    }
+}
+
+.get-it {
+    background-color: #000;
+    box-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
+    background-image: linear-gradient(to right, rgba(222, 129, 60, 0.82) 0%, rgba(63, 81, 154, 0.82) 100%),
+        url(../images/bg-social.png);
+    min-height: 389px;
+    padding: 90px 0;
+    &__wrapper {
+        text-align: center;
+    }
+
+    &__title {
+        color: #fff;
+    }
+
+    &__lits {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    &__item {
+        margin: 0 20px;
+    }
+
+    &__link {
+        fill: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 82px;
+        height: 82px;
+        border: 3px solid #ffffff;
+
+        &:hover,
+        &:focus {
+            outline: transparent;
+            background-color: transparent;
+            background-image: linear-gradient(-50deg, #de813c 0%, #3f519a 100%);
+            box-shadow: 0px 0px 16px 5px rgba(#fff, 0.3);
+        }
+    }
+}
+
+.footer {
+    padding: 70px 0;
+    
+    &__wrapper {
+    }
+    
+    &__address {
+        font-style: normal;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    &__icon {
+        position: relative;
+        &::before {
+            position: absolute;
+            top: 5px;
+            left: 0;
+        }
+    } 
+    
+    &__title {
+        text-transform: uppercase;
+        color: #494949;
+        font-family: Lato-Bold;
+        font-size: 17px;
+        line-height: 24px;
+        letter-spacing: 0.42px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: #494949;
+        font-family: Lato-Regular;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.4px;
+        transition: all 0.3s;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__emails {
+        max-width: 245px;
+        padding-left: 82px; 
+        &::before {
+            content: url(../images/email.png);
+        }
+    }
+    
+    &__phones {
+        max-width: 190px;
+        padding-left: 72px; 
+        &::before {
+            content: url(../images/phone.png);
+        }
+    }
+    
+    &__map {
+        max-width: 282px;
+        padding-left: 82px;
+        &::before {
+            content: url(../images/map.png);
+        }
     }
 }
