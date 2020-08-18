@@ -629,13 +629,14 @@ body {
 
     &__img {
         object-fit: cover;
-        height: -webkit-fill-available;
+        min-height: 725px;
     }
 
     &__info {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 100%;
         padding: 65px;
         padding-left: 45px;
         box-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
@@ -646,6 +647,8 @@ body {
     &__info-text {
         color: #ffffff;
         font-size: 18px;
+        max-width: 330px;
+        width: 100%;
         line-height: 30px;
         letter-spacing: 0.45px;
     }
@@ -673,6 +676,7 @@ body {
         border-radius: 50%;
         box-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
         background-color: #ffffff;
+        transition: all 0.5s;
         &:hover {
             background-color: transparent;
             background-image: linear-gradient(-50deg, #de813c 0%, #3f519a 100%);
