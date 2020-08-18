@@ -411,7 +411,8 @@ body {
         text-align: center;
         position: relative;
         padding: 0 20px 18px;
-        &::before{
+
+        &::before {
             position: absolute;
             top: 22px;
             left: 0;
@@ -422,14 +423,15 @@ body {
     &__item-1 {
         border-right: 2px dotted rgba(#fff, 0.1);
         border-bottom: 2px dotted rgba(#fff, 0.1);
+
         &::before {
             content: url(../images/icon-1.png);
         }
     }
 
     &__item-2 {
-        
         border-bottom: 2px dotted rgba(#fff, 0.1);
+
         &::before {
             content: url(../images/icon-2.png);
         }
@@ -438,6 +440,7 @@ body {
     &__item-3 {
         border-bottom: 2px dotted rgba(#fff, 0.1);
         border-right: 2px dotted rgba(#fff, 0.1);
+
         &::before {
             content: url(../images/Icon-3.png);
         }
@@ -445,6 +448,7 @@ body {
 
     &__item-4 {
         border-bottom: 2px dotted rgba(#fff, 0.1);
+
         &::before {
             content: url(../images/icon-1.png);
         }
@@ -452,6 +456,7 @@ body {
 
     &__item-5 {
         border-right: 2px dotted rgba(#fff, 0.1);
+
         &::before {
             content: url(../images/icon-5.png);
         }
@@ -461,5 +466,67 @@ body {
         &::before {
             content: url(../images/icon-6.png);
         }
+    }
+}
+
+.team {
+    padding: 100px 0 67px;
+    text-align: center;
+
+    &__title {
+        margin: 0;
+        margin-bottom: 46px;
+    }
+
+    &__text {
+        color: #313131;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 30px;
+        letter-spacing: 0.45px;
+        margin-bottom: 70px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 1296px;
+            height: 317px;
+            background-color: #f4f4f4;
+            z-index: -1;
+            margin-left: -65px;
+            bottom: -55px;
+        }
+    }
+
+    &__item {
+    }
+
+    &__img {
+        width: 218px;
+        height: 273px;
+        border-radius: 10px;
+        margin-bottom: 46px;
+        object-fit: cover;
+    }
+
+    &__name {
+        margin: 0;
+        color: #333332;
+        font-family: Lato-Regular;
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 0.61px;
+    }
+
+    &__web {
+        color: #a3a3a3;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.5px;
     }
 }
