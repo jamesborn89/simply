@@ -454,7 +454,7 @@ body {
   border-right: 2px dotted rgba(255, 255, 255, 0.1);
 }
 .services__item-3::before {
-  content: url(../images/Icon-3.png);
+  content: url(../images/icon-3.png);
 }
 .services__item-4 {
   border-bottom: 2px dotted rgba(255, 255, 255, 0.1);
