@@ -88,8 +88,9 @@ body {
   border-radius: 20px;
   transition: all 0.3s;
   text-decoration: none;
+  outline: transparent;
 }
-.btn:hover {
+.btn:hover, .btn:focus {
   background-image: linear-gradient(to left, #de813c 0%, #3f519a 100%);
   color: #000;
 }
@@ -164,8 +165,9 @@ body {
   font-size: 15px;
   text-transform: uppercase;
   transition: all 0.3s;
+  outline: transparent;
 }
-.header__menu-link:hover {
+.header__menu-link:hover, .header__menu-link:focus {
   color: #000;
 }
 .header__inner {
@@ -201,8 +203,9 @@ body {
   background-color: #fff;
   border-radius: 20px;
   transition: all 0.3s;
+  outline: transparent;
 }
-.header__btn:hover {
+.header__btn:hover, .header__btn:focus {
   background-color: transparent;
   background-image: linear-gradient(to right, #de813c 0%, #3f519a 100%);
   color: #fff;
@@ -566,7 +569,6 @@ body {
 .member-page__achiev {
   text-align: right;
   display: block;
-  width: 80%;
   height: 14px;
   box-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
   border-radius: 7px;
@@ -642,9 +644,147 @@ body {
   border-radius: 50%;
   box-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
   background-color: #ffffff;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
-.member-page__link:hover {
+.member-page__link:hover, .member-page__link:focus {
+  outline: transparent;
   background-color: transparent;
   background-image: linear-gradient(-50deg, #de813c 0%, #3f519a 100%);
+  box-shadow: 0px 0px 16px 5px rgba(255, 255, 255, 0.3);
+  fill: #fff;
+}
+
+.price {
+  padding: 94px 0 105px;
+  background-color: #f4f4f4;
+  position: relative;
+}
+.price::before {
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  top: 0;
+  box-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
+  background-color: #b19c93;
+  background-image: linear-gradient(-225deg, #de813c 0%, #3f519a 100%);
+}
+.price__wrapper {
+  display: flex;
+}
+.price__list {
+  z-index: 1;
+  margin-left: -34px;
+  display: flex;
+  text-align: center;
+  max-width: 762px;
+  width: 100%;
+  margin-right: 80px;
+}
+.price__professional {
+  width: 50%;
+  height: 587px;
+  padding: 40px 35px;
+  box-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+}
+.price__professional-title {
+  letter-spacing: -1.58px;
+  margin: 0;
+}
+.price__professional-subtitile {
+  color: #333332;
+  font-family: Lato-Bold;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  display: block;
+}
+.price__professional-price {
+  background: linear-gradient(-225deg, #de813c 0%, #3f519a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
+  color: #333332;
+  font-family: "MyriadPro-BlackCond";
+  font-size: 107px;
+  font-weight: 400;
+  letter-spacing: -1.23px;
+}
+.price__professional-over {
+  color: #333332;
+  font-family: Lato-Bold;
+  font-size: 25px;
+  letter-spacing: 0.61px;
+}
+.price__professional-text {
+  color: #040404;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.45px;
+}
+.price__best {
+  width: 50%;
+  height: 587px;
+  box-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
+  background-color: #b19c93;
+  background-image: linear-gradient(-225deg, #de813c 0%, #3f519a 100%);
+  padding: 50px;
+  color: #fff;
+}
+.price__best-title {
+  font-family: MyriadPro-BlackCond;
+  margin: 50px 0 10px;
+  font-size: 72px;
+  font-weight: 400;
+  letter-spacing: -0.83px;
+}
+.price__best-subtitle {
+  display: block;
+  font-family: Lato-Bold;
+  font-size: 25px;
+  letter-spacing: 0.61px;
+  margin-bottom: 32px;
+}
+.price__best-list {
+  margin: 0;
+  margin-left: 50px;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  margin-bottom: 76px;
+}
+.price__best-item {
+  font-family: Lato-Regular;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.price__best-item::before {
+  content: url("../images/icons/check.svg");
+  position: absolute;
+  left: -30px;
+  top: 0;
+  height: 20px;
+  width: 20px;
+}
+.price__info {
+  max-width: 500px;
+  width: 100%;
+  margin-right: -150px;
+}
+.price__info-title {
+  letter-spacing: -1.58px;
+  max-width: 361px;
+  margin: 51px 0 41px;
+}
+.price__info-text--bold {
+  font-family: Lato-Bold;
+  letter-spacing: 0.45px;
+}
+.price__info-text {
+  color: #040404;
+  font-size: 18px;
+  line-height: 30px;
 }
