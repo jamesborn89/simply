@@ -144,7 +144,7 @@ body {
 .header {
   height: 100vh;
   padding: 25px 0;
-  background-image: url(../images/bg-top.png), url(../images/bg-grd.png);
+  background-image: url(../images/bg-top-min.png), url(../images/bg-grd-min.png);
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -397,7 +397,7 @@ body {
 }
 
 .about {
-  background: url(../images/bg-test.jpg);
+  background: url(../images/bg-test-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 325px;
@@ -578,7 +578,7 @@ body {
 
 .services {
   background-color: #f4f4f4;
-  background-image: url(../images/bg-services.jpg);
+  background-image: url(../images/bg-services-min.jpg);
   background-repeat: no-repeat;
   background-position: right 0;
   background-size: 40% 100%;
@@ -1275,7 +1275,7 @@ body {
 .get-it {
   background-color: #000;
   box-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
-  background-image: linear-gradient(to right, rgba(222, 129, 60, 0.82) 0%, rgba(63, 81, 154, 0.82) 100%), url(../images/bg-social.png);
+  background-image: linear-gradient(to right, rgba(222, 129, 60, 0.82) 0%, rgba(63, 81, 154, 0.82) 100%), url(../images/bg-social-min.png);
   min-height: 389px;
   padding: 90px 0;
 }
